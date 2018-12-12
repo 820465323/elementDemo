@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<video src=""></video>
+</body>
+<script>
+
+  /*async function one() {
+      function sub() {
+        console.log('11');
+        throw new Error('test2')
+      }
+      function sub2() {
+        console.log('22');
+        throw new Error('test1')
+      }
+      await sub();
+      await sub2();
+  }
+  one().catch((error)=>{console.log(error)});*/
+  /**
+   * {
+  "presets": [["env", { "modules": false }]],
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk",
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ]
+  ]
+}
+
+
+   */
+
+  function a() {
+  }
+  a.prototype.name = 'zzw';
+  a.prototype.age = 20;
+  a.prototype.sex = '男';
+
+  let a2 = new a();
+  console.log(a2.name);
+  console.log(a);
+
+  let date = new Date();
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let date2 = date.getDate();
+  let hours = date.getHours();
+  let seconds = date.getSeconds();
+  let minutes = date.getMinutes();
+  let time = year + '-' + month + '-' + date2 + ' ' + hours + ':' + minutes + ':' + seconds;
+  console.log('time = ',time);
+</script>
+</html>
